@@ -36,12 +36,12 @@
             <EditText
                 android:id="@+id/edit_price"
                 android:hint="@string/hint_price"
-                android:inputType="textCapWords"
+                android:inputType="number"
                 style="@style/EditorFieldStyle" />
             <EditText
                 android:id="@+id/edit_quantity"
                 android:hint="@string/hint_quantity"
-                android:inputType="textCapWords"
+                android:inputType="number"
                 style="@style/EditorFieldStyle" />
             <EditText
                 android:id="@+id/edit_supplier_name"
