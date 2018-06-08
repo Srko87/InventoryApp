@@ -54,10 +54,11 @@ public class EditorActivity extends AppCompatActivity {
         String nameString = mProductNameEditText.getText().toString().trim();
         String priceString = mPriceEditText.getText().toString().trim();
         int price = Integer.parseInt(priceString);
-        String quantityString = mQuantityEditText.toString().trim();
+        String quantityString = mQuantityEditText.getText().toString().trim();
         int quantity = Integer.parseInt(quantityString);
-        String supplierNameString = mSupplierNameEditText.toString().trim();
-        String supplierPhoneString = mSupplierPhoneNumberEditText.toString().trim();
+        String supplierNameString = mSupplierNameEditText.getText().toString().trim();
+        String supplierPhoneString = mSupplierPhoneNumberEditText.getText().toString().trim();
+        int phone = Integer.parseInt(supplierPhoneString);
 
         InventoryDbHelper mdbHelper = new InventoryDbHelper(this);
 
@@ -68,7 +69,7 @@ public class EditorActivity extends AppCompatActivity {
         values.put(InventoryEntry.COLUMN_PRICE, price);
         values.put(InventoryEntry.COLUMN_QUANTITY, quantity);
         values.put(InventoryEntry.COLUMN_SUPPLIER_NAME, supplierNameString);
-        values.put(InventoryEntry.COLUMN_SUPPLIER_PHONE_NUMBER, supplierPhoneString);
+        values.put(InventoryEntry.COLUMN_SUPPLIER_PHONE_NUMBER, phone);
 
         long newRowId = db.insert(InventoryEntry.TABLE_NAME, null, values);
 

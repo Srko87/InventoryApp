@@ -51,7 +51,7 @@
             <EditText
                 android:id="@+id/edit_supplier_phone"
                 android:hint="@string/hint_phone"
-                android:inputType="text"
+                android:inputType="phone"
                 style="@style/EditorFieldStyle" />
         </LinearLayout>
     </LinearLayout>

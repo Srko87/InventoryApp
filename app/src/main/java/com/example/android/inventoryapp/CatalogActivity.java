@@ -97,7 +97,7 @@ public class CatalogActivity extends AppCompatActivity {
                 int currentColumnPrice = cursor.getInt(priceColumnIndex);
                 int currentQuantity = cursor.getInt(quantityColumnIndex);
                 String currentSupplierName = cursor.getString(supplierNameColumnIndex);
-                String currentSupplierPhoneNumber = cursor.getString(supplierPhoneNumberColumnIndex);
+                int currentSupplierPhoneNumber = cursor.getInt(supplierPhoneNumberColumnIndex);
 
                 displayView.append(("\n" + currentID + " - " +
                 currentProductName + " - " +
